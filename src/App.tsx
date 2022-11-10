@@ -2,6 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+export function divide(a: number, b: number): number {
+
+  if (b === 0) {
+    throw new Error("You can't divide by zero.");
+  }
+
+  return Math.round(a / b);
+}
+
+
 function App() {
   return (
     <div className="App">
